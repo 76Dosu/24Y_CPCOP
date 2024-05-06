@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <div class="wrap">
+        <h1 class="main-title">원하는 서비스를 선택하세요</h1>
+        <p class="main-description">음성인식을 지원합니다. 원하는 서비스를 음성으로 말씀해보세요.</p>
+
+        <div class="nav-frame">
+            <div class="search-class">
+                <img src="/images/search-icon.png" alt="빈 강의실 찾기" class="search-icon">
+                <p class="serach-text">빈 강의실 찾기</p>
+            </div>
+            <div class="floor-plan">
+                <img src="/images/floor-icon.png" alt="평면도" class="floor-icon">
+                <p class="floor-text">평면도</p>
+            </div>
+            <div class="howTo-use">
+                <img src="/images/howTo-icon.png" alt="이용방법" class="howTo-icon">
+                <p class="howTo-text">이용방법</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $('.nav-frame > div:nth-child(1)').click(function() {
+            $(location).attr('href', 'searchClass.html');
+        })
+
+        
+    </script>
+
 </body>
 </html>
