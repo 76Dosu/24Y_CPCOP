@@ -5,181 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
-    <link rel="stylesheet" href="/searchClass.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <div class="wrap">
-        <div class="container">
-            <!-- 상단 영역 -->
-            <div class="top">
-                <div class="back-frame">
-                    <img src="/images/back-icon.png" alt="뒤로가기" class="back-icon">
-                    <a href="/index.html" class="back-text">뒤로가기</a>
-                </div>
-                <div class="voice-frame">
-                    <img src="/images/voice-icon.png" alt="음성인식" class="voice-icon">
-                    <p class="voice-text">어떤 건물을 확인할까요?</p>
-                </div>
+        <h1 class="main-title">원하는 서비스를 선택하세요</h1>
+        <p class="main-description">음성인식을 지원합니다. 원하는 서비스를 음성으로 말씀해보세요.</p>
+
+        <div class="nav-frame">
+            <div class="search-class">
+                <img src="/images/search-icon.png" alt="빈 강의실 찾기" class="search-icon">
+                <p class="serach-text">빈 강의실 찾기</p>
             </div>
-
-            <!-- 컨텐츠 영역 -->
-            <div class="bottom">
-
-                <!-- 산학융합건물 -->
-                <div class="building" id="IAC">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">산학융합관</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- A동 -->
-                <div class="building" id="A-Dong">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">A동</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- B동 -->
-                <div class="building" id="B-Dong">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">B동</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- C동 -->
-                <div class="building" id="C-Dong">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">C동</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- D동 -->
-                <div class="building" id="D-Dong">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">D동</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- E동 -->
-                <div class="building" id="E-Dong">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">E동</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- G동 -->
-                <div class="building" id="G-Dong">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">G동</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 종합교육관 -->
-                <div class="building" id="CEC">
-                    <img src="/images/test.png" alt="" class="building-img">
-
-                    <div class="building-info-frame">
-                        <p class="building-title">종합교육관</p>
-                        <div class="room-info">
-                            <div class="use-room">
-                                <p class="use-room-text">사용 강의실</p>
-                                <p class="use-room-count">17</p>
-                            </div>
-                            <div class="empty-room">
-                                <p class="empty-room-text">잔여 강의실</p>
-                                <p class="empty-room-count">12</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="floor-plan">
+                <img src="/images/floor-icon.png" alt="평면도" class="floor-icon">
+                <p class="floor-text">평면도</p>
+            </div>
+            <div class="howTo-use">
+                <img src="/images/howTo-icon.png" alt="이용방법" class="howTo-icon">
+                <p class="howTo-text">이용방법</p>
             </div>
         </div>
     </div>
+
+    <script>
+
+        $('.nav-frame > div:nth-child(1)').click(function() {
+            $(location).attr('href', 'searchBuilding.html');
+        })
+
+        
+    </script>
 
 </body>
 </html>
