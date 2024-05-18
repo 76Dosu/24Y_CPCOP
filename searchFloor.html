@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>빈 강의실 찾기</title>
 
-    <link rel="stylesheet" href="/searchBuilding.css">
+    <link rel="stylesheet" href="/searchFloor.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,8 +14,8 @@
         <div class="container">
             
             <div class="title-frame">
-                <a href="/index.html"><img src="/images/back-icon.png" alt="" class="back"></a>
-                <p class="title">어느 건물을 확인해볼까요?</p>
+                <a href="/searchBuilding.html"><img src="/images/back-icon.png" alt="" class="back"></a>
+                <p class="title">몇 층을 확인해볼까요?</p>
             </div>
 
             <div class="voiceRecog-frame">
@@ -23,22 +23,31 @@
                 <p class="voice-text">음성인식을 지원합니다. 원하는 서비스를 음성으로 말씀해보세요.</p>
             </div>
 
-            <div class="buildingList-frame">
-                <div class="building" id="buildingA">
-                    <p class="building-title">산학융합관</p>
-                    <div class="classInfo-frame">
-                        <div class="empty-class">빈 강의실 <span class="empty-class-count">12</span></div>
-                        <div class="use-class">사용 강의실 <span class="use-class-count">17</span></div>
-                    </div>
+            <div class="floorList-frame">
+                <div class="floor">
+                    <p class="floor-text">2층</p>
+                </div>
+
+                <div class="floor">
+                    <p class="floor-text">3층</p>
+                </div>
+
+                <div class="floor">
+                    <p class="floor-text">4층</p>
+                </div>
+
+                <div class="floor">
+                    <p class="floor-text">7층</p>
                 </div>
             </div>
+
         </div>
     </div>
 
     <script>
 
-        $('#buildingA').click(function() {
-            $(location).attr('href', 'searchFloor.html');
+$('.floor').click(function() {
+            $(location).attr('href', 'searchClass.html');
         })
 
     </script>

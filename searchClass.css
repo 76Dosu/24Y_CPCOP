@@ -12,3 +12,138 @@
     --main-color:#1758A7;
     --text-color:#333;
 }
+
+.wrap {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F5F8;
+}
+
+    .wrap .container {
+        padding:80px 9.375%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+        /* title */
+        .container .title-frame {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+            .title-frame .back {
+                width: 40px;
+                height:40px;
+                margin-right: 24px;
+            }
+
+            .title-frame .title {
+                font-size: 48px;
+                font-weight: bold;
+                color: var(--main-color);
+            }
+
+        /* voiceRecog */
+        .container .voiceRecog-frame {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+            .voiceRecog-frame .voice-icon {
+                width: 40px;
+                height: 40px;
+                margin-right: 24px;
+            }
+
+            .voiceRecog-frame .voice-text {
+                font-size: 28px;
+                font-weight: 400;
+                color:var(--text-color)
+            }
+
+        /* FloorList */
+        .container .classList-frame {
+            display: flex;
+            flex-wrap: wrap;
+            width: fit-content;
+            align-items: center;
+            justify-content: space-between;
+            
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .classList-frame > div {
+            width: 49%;
+            height: 560px;
+            border-radius: 16px;
+            padding: 40px;
+
+            box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.12);
+            background-color: white;
+        }
+
+        .classList-frame > div > p {
+            font-size: 40px;
+            font-weight: bold;
+            color:var(--text-color);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        /* 빈 강의실 */
+        .empty-classList-frame .empty-classList {
+            display: flex;
+            flex-wrap: wrap;
+            /* overflow: hidden; */
+        }
+
+            .empty-classList {
+                display: flex;
+                justify-content: space-between  ;
+                width: 100%;
+                /* overflow: scroll; */
+            }
+
+                .empty-class {
+                    width: 49%;
+                    border-radius: 16px;
+                    border:1px solid var(--main-color);
+
+                    font-size: 28px;
+                    font-weight: 400;
+                    color:var(--text-color);
+                    text-align: center;
+                    padding: 28px 0;
+                    margin-bottom: 2%;
+                }
+
+        /* 사용 강의실 */
+        .use-classList-frame .use-classList {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .use-classList {
+                display: flex;
+                justify-content: space-between  ;
+                width: 100%;
+            }
+
+                .use-class {
+                    width: 49%;
+                    border-radius: 16px;
+                    border:1px solid var(--main-color);
+
+                    font-size: 28px;
+                    font-weight: 400;
+                    color:var(--text-color);
+                    text-align: center;
+                    padding: 28px 0;
+                    margin-bottom: 2%;
+                }
