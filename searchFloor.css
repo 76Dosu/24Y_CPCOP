@@ -70,7 +70,6 @@
         .container .floorList-frame {
             display: flex;
             flex-wrap: wrap;
-            width: fit-content;
             align-items: center;
             justify-content: space-between;
             
@@ -78,12 +77,16 @@
             margin-top: auto;
         }
 
+            .floorList-frame > a {
+                width: 49%;
+            }
+        
             .floor {
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-                width:49%;
+                width:100%;
 
                 padding: 100px 0px;
                 margin-bottom: 2%;
